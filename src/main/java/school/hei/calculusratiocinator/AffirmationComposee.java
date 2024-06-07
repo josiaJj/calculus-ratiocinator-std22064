@@ -14,7 +14,16 @@ public class AffirmationComposee implements Affirmation{
     @Override
     public ValeurDeVerite calculerValeurDeVerite() {
 
-        return ValeurDeVerite.jenesaispas;
+        switch (conjonctionDeCoordination) {
+            case ET:
+                return affirmationNum1.calculerValeurDeVerite() == ValeurDeVerite.vrai && affirmationNum2.calculerValeurDeVerite() == ValeurDeVerite.vrai ? ValeurDeVerite.vrai : ValeurDeVerite.faux;
+            case OU:
+                return affirmationNum1.calculerValeurDeVerite() == ValeurDeVerite.vrai || affirmationNum2.calculerValeurDeVerite() == ValeurDeVerite.vrai ? ValeurDeVerite.vrai : ValeurDeVerite.faux;
+            case DONC:
+                return affirmationNum1.calculerValeurDeVerite() == ValeurDeVerite.faux || affirmationNum2.calculerValeurDeVerite() == ValeurDeVerite.vrai ? ValeurDeVerite.vrai : ValeurDeVerite.faux;
+            default:
+                throw new IllegalArgumentException(conjonctionDeCoordination + " n'est pas une conjonction de Coordination");
+        }
     }
 
     @Override

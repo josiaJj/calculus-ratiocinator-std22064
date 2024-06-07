@@ -1,5 +1,5 @@
 package school.hei.calculusratiocinator;
 
 public enum ConjonctionDeCoordination {
-    ET, OU
+    ET, OU, DONC
 }
