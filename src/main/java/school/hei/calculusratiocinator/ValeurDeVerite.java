@@ -1,5 +1,5 @@
 package school.hei.calculusratiocinator;
 
-public class ValeurDeVerite {
-
+enum ValeurDeVerite {
+    vrai, faux, jenesaispas
 }
