@@ -20,7 +20,7 @@ public class AffirmationComposee implements Affirmation{
             case OU:
                 return affirmationNum1.calculerValeurDeVerite() == ValeurDeVerite.vrai || affirmationNum2.calculerValeurDeVerite() == ValeurDeVerite.vrai ? ValeurDeVerite.vrai : ValeurDeVerite.faux;
             case DONC:
-                return affirmationNum1.calculerValeurDeVerite() == ValeurDeVerite.faux || affirmationNum2.calculerValeurDeVerite() == ValeurDeVerite.vrai ? ValeurDeVerite.vrai : ValeurDeVerite.faux;
+                return affirmationNum1.calculerValeurDeVerite() == ValeurDeVerite.vrai && affirmationNum2.calculerValeurDeVerite() == ValeurDeVerite.faux ? ValeurDeVerite.faux : ValeurDeVerite.vrai;
             default:
                 throw new IllegalArgumentException(conjonctionDeCoordination + " n'est pas une conjonction de Coordination");
         }
