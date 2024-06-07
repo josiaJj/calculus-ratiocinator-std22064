@@ -21,4 +21,12 @@ public class AffirmationSimpleTest {
         assertEquals(valeurActuel, valeurAttendue);
     }
 
+    @Test
+    public void lou_est_genereux() {
+        Affirmation louEstGenereux = new AffirmationSimple("Lou est généreux");
+        ValeurDeVerite valeurActuel = louEstGenereux.calculerValeurDeVerite();
+        ValeurDeVerite valeurAttendue = ValeurDeVerite.jenesaispas;
+        assertEquals(valeurActuel, valeurAttendue);
+    }
+
 }
