@@ -3,7 +3,7 @@ package school.hei.calculusratiocinator;
 import lombok.Getter;
 
 @Getter
-public final class AffirmationSimple implements Affirmation {
+public final class AffirmationSimple extends Affirmation {
     private final String valeur;
 
     public AffirmationSimple(String valeur) {
@@ -17,14 +17,10 @@ public final class AffirmationSimple implements Affirmation {
     @Override
     public ValeurDeVerite calculerValeurDeVerite() {
         switch (valeur) {
-            case "Lou est beau":
-                return ValeurDeVerite.vrai;
-            case "Lou est pauvre":
-                return ValeurDeVerite.faux;
-            case "Lou est généreux":
-                return ValeurDeVerite.jenesaispas;
-            default:
-                return ValeurDeVerite.jenesaispas;
+            case "Lou est beau": return ValeurDeVerite.vrai;
+            case "Lou est pauvre": return ValeurDeVerite.faux;
+            case "Lou est généreux": return ValeurDeVerite.jenesaispas;
+            default: return ValeurDeVerite.jenesaispas;
         }
     }
 

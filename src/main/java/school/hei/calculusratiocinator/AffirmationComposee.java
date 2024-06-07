@@ -1,6 +1,6 @@
 package school.hei.calculusratiocinator;
 
-public final class AffirmationComposee implements Affirmation{
+public final class AffirmationComposee extends Affirmation{
     private final Affirmation affirmationNum1;
     private final ConjonctionDeCoordination conjonctionDeCoordination;
     private final Affirmation affirmationNum2;
