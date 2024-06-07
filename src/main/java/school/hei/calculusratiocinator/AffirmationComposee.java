@@ -1,6 +1,6 @@
 package school.hei.calculusratiocinator;
 
-public class AffirmationComposee implements Affirmation{
+public final class AffirmationComposee implements Affirmation{
     private final Affirmation affirmationNum1;
     private final ConjonctionDeCoordination conjonctionDeCoordination;
     private final Affirmation affirmationNum2;
@@ -9,6 +9,10 @@ public class AffirmationComposee implements Affirmation{
         this.affirmationNum1 = affirmationNum1;
         this.conjonctionDeCoordination = conjonctionDeCoordination;
         this.affirmationNum2 = affirmationNum2;
+    }
+
+    public static AffirmationComposee of(Affirmation affirmationNum1, ConjonctionDeCoordination conjonctionDeCoordination, Affirmation affirmationNum2) {
+        return new AffirmationComposee(affirmationNum1, conjonctionDeCoordination, affirmationNum2);
     }
 
     @Override
