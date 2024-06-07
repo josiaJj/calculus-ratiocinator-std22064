@@ -13,6 +13,12 @@ public class AffirmationSimpleTest {
         assertEquals(valeurActuel, valeurAttendue);
     }
 
-
+    @Test
+    public void lou_est_pauvre() {
+        Affirmation louEstPauvre = new AffirmationSimple("Lou est pauvre");
+        ValeurDeVerite valeurActuel = louEstPauvre.calculerValeurDeVerite();
+        ValeurDeVerite valeurAttendue = ValeurDeVerite.faux;
+        assertEquals(valeurActuel, valeurAttendue);
+    }
 
 }
