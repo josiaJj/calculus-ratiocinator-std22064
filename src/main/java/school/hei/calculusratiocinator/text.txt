@@ -1,0 +1,31 @@
+- La conjonction "et" dit que la composition de 2 affirmations est vraie si les deux sont vraies. Autrement la composition est fausse.
+- La conjonction "ou" dit que la composition de 2 affirmations est vraie si au moins l’une des deux est vraie. Autrement la composition est fausse.
+- La conjonction "donc" dit que la composition de 2 affirmations est fausse si la première est vraie et la deuxième est fausse. Autrement elle est vraie.
+
+En considérant les affirmations suivantes :
+- (vérité_1) Lou est beau. C’est une vérité car tout le temps vrai.
+- (mensonge_1) Lou est pauvre. C’est un mensonge car tout le temps faux.
+- (affirmation_1) Lou est généreux. C’est une affirmation car peut être vraie ou fausse.
+
+Quels seront les réponses de ces affirmations :
+1- Lou est pauvre et Lou est généreux.
+2- Lou est beau. Donc Lou est pauvre.
+- Lou est pauvre. Donc Lou est généreux.
+4- Lou est beau ou Lou est généreux. Donc Lou est pauvre.
+- Premièrement : « Lou est beau ou Lou est généreux. Donc Lou est pauvre. » Et deuxièment : Lou est pauvre ou Lou est généreux »
+
+Répondez par "vrai", "faux", "je ne sais pas" et expliquer selon les connecteurs logiques en mathématique
+
+
+Lou est beau 1
+Lou est pauvre 0
+lou est généreux (1 ou 0) = 1
+
+1 - 0 et 1 = 0
+2 - 1 > 0 = 0
+3 - 0 > 1 = 1
+4 - (1 ou 1) > 0 = 0
+
+5 - ((1 ou 1) > 0) et (0 ou 1)
+(1 > 0) et 1
+0 et 1 = 0
