@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class AffirmationComposeeTest {
+public class AffirmationComposeeTest {
     @Test
     public void lou_est_pauvre_et_lou_est_genereux() {
         Affirmation louEstPauvre = new AffirmationSimple("Lou est pauvre");
