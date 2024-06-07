@@ -2,6 +2,7 @@ package school.hei.calculusratiocinator;
 
 import lombok.Getter;
 
+@Getter
 public final class AffirmationSimple implements Affirmation {
     private final String valeur;
 
