@@ -12,4 +12,7 @@ public class AffirmationSimpleTest {
         ValeurDeVerite valeurAttendue = ValeurDeVerite.vrai;
         assertEquals(valeurActuel, valeurAttendue);
     }
+
+
+
 }

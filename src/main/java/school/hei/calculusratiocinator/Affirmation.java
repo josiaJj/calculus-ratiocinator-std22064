@@ -1,5 +1,6 @@
 package school.hei.calculusratiocinator;
 
-public interface Affirmation {
-    ValeurDeVerite calculerValeurDeVerite();
+public sealed abstract class Affirmation permits
+    AffirmationSimple, AffirmationComposee {
+    public abstract ValeurDeVerite calculerValeurDeVerite();
 }
