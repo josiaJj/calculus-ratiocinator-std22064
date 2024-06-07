@@ -3,11 +3,15 @@ package school.hei.calculusratiocinator;
 import lombok.Getter;
 
 @Getter
-public class AffirmationSimple implements Affirmation {
+public final class AffirmationSimple implements Affirmation {
     private final String valeur;
 
     public AffirmationSimple(String valeur) {
         this.valeur = valeur;
+    }
+
+    public static AffirmationSimple of(String valeur) {
+        return new AffirmationSimple(valeur);
     }
 
     @Override
